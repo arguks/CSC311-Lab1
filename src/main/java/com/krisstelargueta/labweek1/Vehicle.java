@@ -6,22 +6,24 @@ package com.krisstelargueta.labweek1;
 
 public class Vehicle {
 
+    //attributes
     protected int numberOfWheels;
     private String color;
     private float engineSize;
     private String fuelType;
-    
+
+    //constructor method
     public Vehicle (int numberOfWheels , String color, float engineSize, String fuelType){
         this.numberOfWheels  = numberOfWheels ;
         this.color = color;
         this.engineSize = engineSize;
         this.fuelType = fuelType;
     }
-    
+
+    //setters
     public void setNumberOfWheels  (int numberOfWheels ){
         this.numberOfWheels  = numberOfWheels ;
     }
-    
     public void setColor(String color){
         this.color = color;
     }
@@ -31,11 +33,11 @@ public class Vehicle {
     public void setFuelType (String fuelType){
         this.fuelType = fuelType;
     }
-    
+
+    //getters
     public int getNumberOfWheels (){
         return numberOfWheels;
     }
-    
     public String getColor (){
         return color;
     }
@@ -45,7 +47,8 @@ public class Vehicle {
     public String getFuelType (){
         return fuelType;
     }
-    
+
+    //display method
     public String displayInfo () {
        return "Number of wheels: " + getNumberOfWheels() +"\nColor: "+ getColor() + "\nEngine Size: " + getEngineSize() + " liters" + "\nFuel Type: " + getFuelType();
     }
